@@ -1,0 +1,26 @@
+gclink 0.1 release notes
+
+This is version 0.1 of gclink, a tool for communicating with a Tiger 
+game.com handheld unit, using a Tiger Web Link cable sold for use with the
+unit.  It allows the high score/saved game slots to be received from the 
+unit and placed into separate files, which then can be edited and then
+sent back to the game.com unit.
+
+It is released under the GNU Public License, and the source can be compiled
+under DJGPP for MS-DOS and GCC for Linux.  It is designed to be easy to
+port to other platforms.
+
+For command line options, use the -h parameter.
+
+Send bug reports to <redacted>.
+
+Changes in the 0.2 release are:
+
+* Fixed bug in checksum routine.
+* Added handling for checksum error reply when sending single score to
+unit.
+* Changed file mode to binary on MS-DOS to prevent CRLF mangling.
+* Enabled sending close connection command on get all scores.
+* Fixed listing for second slot of Resident Evil 2.
+
+
